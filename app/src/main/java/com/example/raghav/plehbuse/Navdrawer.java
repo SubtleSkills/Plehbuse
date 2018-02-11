@@ -1,5 +1,6 @@
 package com.example.raghav.plehbuse;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
 
 public class Navdrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -81,12 +83,24 @@ public class Navdrawer extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.Flmain,new Homefr());
+            ft.commit();
+
         } else if (id == R.id.nav_finance) {
+            android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.Flmain,new Financefr());
+            ft.commit();
 
         } else if (id == R.id.nav_cashover) {
+            android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.Flmain,new Cashoverfr());
+            ft.commit();
 
         } else if (id == R.id.nav_tools) {
+            android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.Flmain,new Toolsfr());
+            ft.commit();
 
         } else if (id == R.id.nav_share) {
 
