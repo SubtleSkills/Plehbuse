@@ -1,17 +1,65 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.raghav.plehbuse.Homefr"
-    android:background="@color/colorAccent">
+    android:background="@color/colorBg"
+    tools:context="com.example.raghav.plehbuse.Homefr">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="Home Fragment"
         android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/imgbtn_boss"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="320dp"
+        android:adjustViewBounds="false"
+        android:background="@color/colorBg"
+        android:src="@drawable/round_corners"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_person1"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="98dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:adjustViewBounds="false"
+        android:background="@color/colorBg"
+        android:src="@drawable/round_corners"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_person2"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="204dp"
+        android:adjustViewBounds="false"
+        android:background="@color/colorBg"
+        android:src="@drawable/round_corners"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+
+</android.support.constraint.ConstraintLayout>

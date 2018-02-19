@@ -70,6 +70,9 @@ public class Navdrawer extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.Flmain,new Settingsfr());
+            ft.commit();
             return true;
         }
 
